@@ -16,7 +16,7 @@ class Solution(object):
         low = 0
         high = len(nums) - 1
         mid = 0
-        
+        # using binary search which runs in O(logn) time complexity
         while low <= high:
             mid = (low+high)//2
             if nums[mid] > target:

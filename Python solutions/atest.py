@@ -1,37 +1,7 @@
-def isValid( s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        
-        stack = []
 
-        def findPair(par):
-            if par == ')':
-                return '('
-            if par == '}':
-                return '{'
-            if par == ']':
-                return '['
-            
-        def isleft(par):
-            if par == '(' or par == '{' or par == '[':
-                return True
-            return False
-        
-        for x in s:
-            if len(stack)==0 and not isleft(x):
-                return False
-            if isleft(x):
-                stack.append(x)
-            else:
-                if stack.pop() == findPair(x):
-                    continue
-                else:
-                    return False
-        
-        if len(stack) == 0:
-            return True
-        return False
+a = [False, False]
+b = [True]
+c = -1 + -2
 
-print(isValid("("))
+
+print(c)
