@@ -1,7 +1,7 @@
 
-a = [False, False]
-b = [True]
-c = -1 + -2
 
+a = 0
+a += 2
+a += 1
 
-print(c)
+print(a)
